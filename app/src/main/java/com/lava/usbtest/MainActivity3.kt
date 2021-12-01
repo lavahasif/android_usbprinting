@@ -16,7 +16,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.lava.usbtest.R
 
 
 class MainActivity3 : AppCompatActivity() {
@@ -103,8 +102,11 @@ ProductID: ${usbDevice1.productId}
             connection.claimInterface(usbInterface, forceCLaim)
             val thread = Thread {
                 val cut_paper = byteArrayOf(0x1D, 0x56, 0x41, 0x10)
+                val opendrawer = byteArrayOf(27, 112, 0, 100, 250.toByte())
+                val cash = byteArrayOf(0x1D, 0x56, 0x41, 0x10)
                 connection.bulkTransfer(mEndPoint, testBytes, testBytes.size, 0)
                 connection.bulkTransfer(mEndPoint, cut_paper, cut_paper.size, 0)
+                connection.bulkTransfer(mEndPoint, opendrawer, opendrawer.size, 0)
             }
             thread.run()
         }
