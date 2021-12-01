@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <usb-device-->
+<!--        class="7"-->
+<!--        product-id="42752"-->
+<!--        protocol="2"-->
+<!--        subclass="1"-->
+<!--        vendor-id="1317" /> &lt;!&ndash; POS Printer &ndash;&gt;-->
+<!--    <usb-device-->
+<!--        class="7"-->
+<!--        product-id="42754"-->
+<!--        protocol="2"-->
+<!--        subclass="1"-->
+<!--        vendor-id="1317" /> &lt;!&ndash; Mobile Printer &ndash;&gt;-->
+
+
+<!--    <resources>-->
+        <usb-device vendor-id="1208" product-id="2163" />
+        <usb-device vendor-id="1137" product-id="85" />
+<!--    </resources>-->
+</resources>
